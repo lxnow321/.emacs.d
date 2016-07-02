@@ -23,10 +23,10 @@
       (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
 
 ;;google-translate
-(require 'google-translate)
-(require 'google-translate-default-ui)
-(global-set-key "\C-ct" 'google-translate-at-point)
-(global-set-key "\C-cT" 'google-translate-query-translate)
+;;(require 'google-translate)
+;;(require 'google-translate-default-ui)
+;;(global-set-key "\C-ct" 'google-translate-at-point)
+;;(global-set-key "\C-cT" 'google-translate-query-translate)
 
 ;;(setq-default google-translate-default-target-language English)
 ;;(setq-default google-translate-default-source-language Chinese Simplified)
@@ -76,6 +76,17 @@
 (setq ring-bell-function 'ignore)
 
 
+;;拼音 chinese-pyim
+(require 'chinese-pyim)
+(require 'chinese-pyim-basedict)
+(chinese-pyim-basedict-enable)
+(require 'chinese-pyim-greatdict)
+(chinese-pyim-greatdict-enable)
+
+(setq default-input-method "chinese-pyim")
+
+;;Debug
+(setq debug-on-error t)
 
 
 
