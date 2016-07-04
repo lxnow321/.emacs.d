@@ -31,6 +31,9 @@
 
 ;;(setq-default cursor-type 'bar)
 
+;;font
+(set-face-attribute 'default nil :height 110) 
+
 ;;popwin
 (require 'popwin)
 (popwin-mode 1)
