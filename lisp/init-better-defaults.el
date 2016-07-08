@@ -41,6 +41,11 @@
 ;;(setq default-input-method "chinese-pyim")
 
 
+;;tab-with
+(setq-default default-tab-width 4)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode t)
+
 ;;why the shell-pop is invalid in windows
 (add-to-list 'load-path "somewhere")
 (require 'shell-pop)
@@ -86,7 +91,10 @@
 (setq default-input-method "chinese-pyim")
 
 ;;Debug
-(setq debug-on-error t)
+(setq debug-on-error nil)
+
+
+;;helm-ag
 
 
 
