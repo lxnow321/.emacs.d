@@ -17,6 +17,7 @@
 (global-flycheck-mode)
 
 
+
 ;;window-numbering:Change window by M+0..9
 (window-numbering-mode t)
 (setq window-numbering-assign-func
@@ -66,7 +67,8 @@
 
 
 ;;projectile
-(projectile-mode t)
+;;(projectile-mode t)
+(projectile-global-mode t)
 
 ;;helm-projectile
 (require 'helm-projectile)
@@ -82,11 +84,11 @@
 
 
 ;;拼音 chinese-pyim
-(require 'chinese-pyim)
-(require 'chinese-pyim-basedict)
-(chinese-pyim-basedict-enable)
-(require 'chinese-pyim-greatdict)
-(chinese-pyim-greatdict-enable)
+;;(require 'chinese-pyim)
+;;(require 'chinese-pyim-basedict)
+;;(chinese-pyim-basedict-enable)
+;;(require 'chinese-pyim-greatdict)
+;;(chinese-pyim-greatdict-enable)
 
 (setq default-input-method "chinese-pyim")
 
@@ -94,7 +96,9 @@
 (setq debug-on-error nil)
 
 
-;;helm-ag
+;;add cygwin64 path for emacs
+(setenv "PATH" (concat (getenv "PATH") ";G:\\cygwin64\\bin"))
+(add-to-list 'exec-path "G:/cygwin64/bin")
 
 
 

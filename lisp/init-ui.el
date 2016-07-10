@@ -1,7 +1,8 @@
 
 ;;init-ui
 
-(load-theme 'monokai t)
+;;(load-theme 'monokai t)
+(load-theme 'tango t)
 
 
 (setq inhibit-splash-screen t)
@@ -47,8 +48,8 @@
 
 ;;neotree
 ;;(add-to-list 'load-path "~/PythonText")
-(require 'neotree)
-(global-set-key [f5] 'neotree-toggle)
+;;(require 'neotree)
+;;(global-set-key [f5] 'neotree-toggle)
 
 
 (provide 'init-ui)
