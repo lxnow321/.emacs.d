@@ -28,7 +28,6 @@
 
 ;;(package-initialize)
 (elpy-enable)
-;;(elpy-use-ipython)
 
 ;;flycheck On-the-fly syntax checking
 ;;(require 'flycheck)

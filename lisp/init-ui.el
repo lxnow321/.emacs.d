@@ -12,6 +12,8 @@
 
 (global-linum-mode t)
 
+(column-number-mode t)
+
 (delete-selection-mode t)
 
 
