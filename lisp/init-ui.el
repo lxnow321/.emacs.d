@@ -1,8 +1,11 @@
 
 ;;init-ui
 
-;;(load-theme 'monokai t)
-(load-theme 'tango t)
+;;load-theme
+(when (memq window-system '(x))
+  (load-theme 'monokai t))
+(when (memq window-system '(w32))
+  (load-theme 'tango t))
 
 
 (setq inhibit-splash-screen t)
@@ -30,7 +33,7 @@
 ;;scrool bar
 (scroll-bar-mode -1)
 
-;;(setq-default cursor-type 'bar)
+(setq-default cursor-type 'bar)
 
 ;;font
 (set-face-attribute 'default nil :height 110) 

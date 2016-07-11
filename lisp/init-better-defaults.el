@@ -1,6 +1,24 @@
 
 
+;;linux-better-defaults
+(defun linux-better-defaults ()
+  ;;chinese-pyim
+  (require 'chinese-pyim)
+  (require 'chinese-pyim-basedict)
+  (chinese-pyim-basedict-enable)
+  (setq default-input-method "chinese-pyim"))
 
+(when (memq window-system '(x))
+  (linux-better-defaults))
+
+
+;;win32-better-defaults
+(defun win32-better-defaults ()
+   (setenv "PATH" (concat (getenv "PATH") ";G:\\cygwin64\\bin"))
+   (add-to-list 'exec-path "G:/cygwin64/bin"))
+
+(when (memq window-system '(w32))
+  (win32-better-defaults))
 
 (desktop-save-mode t)
 
@@ -22,24 +40,6 @@
 (window-numbering-mode t)
 (setq window-numbering-assign-func
       (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
-
-;;google-translate
-;;(require 'google-translate)
-;;(require 'google-translate-default-ui)
-;;(global-set-key "\C-ct" 'google-translate-at-point)
-;;(global-set-key "\C-cT" 'google-translate-query-translate)
-
-;;(setq-default google-translate-default-target-language English)
-;;(setq-default google-translate-default-source-language Chinese Simplified)
-
-
-
-;;chinese-pyim
-;;(require 'chinese-pyim)
-;;(require 'chinese-pyim-basedict)
-;;(chinese-pyim-basedict-enable)
-
-;;(setq default-input-method "chinese-pyim")
 
 
 ;;tab-with
@@ -82,24 +82,16 @@
 ;;ring-bell-function
 (setq ring-bell-function 'ignore)
 
-
-;;拼音 chinese-pyim
-;;(require 'chinese-pyim)
-;;(require 'chinese-pyim-basedict)
-;;(chinese-pyim-basedict-enable)
-;;(require 'chinese-pyim-greatdict)
-;;(chinese-pyim-greatdict-enable)
-
-(setq default-input-method "chinese-pyim")
-
 ;;Debug
 (setq debug-on-error nil)
 
-
-;;add cygwin64 path for emacs
-(setenv "PATH" (concat (getenv "PATH") ";G:\\cygwin64\\bin"))
-(add-to-list 'exec-path "G:/cygwin64/bin")
-
+;;google-translate
+(require 'google-translate)
+(require 'google-translate-default-ui)
+(global-set-key "\C-ct" 'google-translate-at-point)
+(global-set-key "\C-cT" 'google-translate-query-translate)
+(setq google-translate-default-target-language "zh-CN")
+(setq google-translate-default-source-language "en")
 
 
 (provide 'init-better-defaults)
