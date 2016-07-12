@@ -18,6 +18,38 @@
 		    swiper
 		    counsel
 		    smartparens
+		    hungry-delete
+		    smartparens
+
+		    ;;default-better
+		    chinese-pyim
+		    flycheck
+		    shell-pop
+		    imenu-anywhere
+		    imenu-list
+		    
+		    projectile
+		    helm-projectile
+		    window-numbering
+		    
+		    google-translate
+
+			helm-ag
+
+		    ;;keybindings
+		    recentf
+
+		    ;;ui
+		    highlight-parentheses
+		    popwin
+		    direx
+
+		    ;;python
+			exec-path-from-shell
+			elpy
+		    jedi
+		    jedi-direx
+		    
 		    ) "Default packages")
 
 (setq package-selected-packages 'mypackage)
