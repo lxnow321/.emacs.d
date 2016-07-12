@@ -46,7 +46,7 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
 
-;;why the shell-pop is invalid in windows
+;;use shell easily on emacs
 (add-to-list 'load-path "somewhere")
 (require 'shell-pop)
 
@@ -54,7 +54,7 @@
 ;;(set-face-attribute 'default nil :height 110)
 
 ;;imenu-anywhere
-;;(global-set-key (kbd "C-.") #'imenu-anywhere)
+;;(global-set-key (kbd "C-.")# 'imenu-anywhere)
 (global-set-key (kbd "C-.") #'helm-imenu-anywhere)
 
 ;;imenu-list
@@ -75,6 +75,13 @@
 
 
 ;;coding system
+(set-language-environment 'Chinese-GBK)
+(setq locale-coding-system 'gbk)
+(set-default-coding-systems 'gbk)
+(set-terminal-coding-system 'gbk)
+(unless (eq system-type 'windows-nt)
+  (set-selection-coding-system 'gbk))
+
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 

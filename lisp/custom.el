@@ -11,7 +11,8 @@
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes (quote ("6df30cfb75df80e5808ac1557d5cc728746c8dbc9bc726de35b15180fa6e0ad9" default)))
  '(neo-click-changes-root t)
- '(neo-theme (quote arrow)))
+ '(neo-theme (quote arrow))
+ '(shell-pop-universal-key "C-t"))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
