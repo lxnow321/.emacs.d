@@ -54,6 +54,8 @@
 		    jedi
 		    jedi-direx
 
+			anaconda-mode
+
 
 		    
 		    ) "Default packages")
