@@ -44,11 +44,17 @@
 		    popwin
 		    direx
 
+			switch-window
+			swap-buffers
+			
+
 		    ;;python
 			exec-path-from-shell
 			elpy
 		    jedi
 		    jedi-direx
+
+
 		    
 		    ) "Default packages")
 

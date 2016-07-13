@@ -61,7 +61,7 @@
 (global-set-key (kbd "C-'") #'imenu-list-minor-mode)
 
 
-
+;;revert-mode
 (global-auto-revert-mode t)
 
 
@@ -72,6 +72,9 @@
 ;;helm-projectile
 (require 'helm-projectile)
 (helm-projectile-on)
+
+;;helm-ag
+(global-set-key (kbd "C-c f") 'helm-ag-project-root)
 
 
 ;;coding system
@@ -100,9 +103,23 @@
 (setq google-translate-default-source-language "en")
 
 
+;;buffer-move
+;;(global-set-key (kbd "<C-S-up>") 'buf-move-up)
+;;(global-set-key (kbd "<C-S-down>") 'buf-move-down)
+;;(global-set-key (kbd "<C-S-left>") 'buf-move-left)
+;;(global-set-key (kbd "<C-S-right>") 'buf-move-right)
+
+;;switch-window
+(global-set-key (kbd "C-x o") 'switch-window)
+
+;;swap-buffers
+(global-set-key (kbd "C-c b") 'swap-buffers)
+
+
+;;change C-r the isearch-backward
+(global-set-key (kbd "C-r") 'isearch-forward)
+
+
 (provide 'init-better-defaults)
-
-
-
 
 
