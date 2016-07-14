@@ -46,6 +46,8 @@
 
 			switch-window
 			swap-buffers
+
+			popup-imenu
 			
 
 		    ;;python

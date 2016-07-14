@@ -55,7 +55,9 @@
 
 ;;imenu-anywhere
 ;;(global-set-key (kbd "C-.")# 'imenu-anywhere)
-(global-set-key (kbd "C-.") #'helm-imenu-anywhere)
+;;(global-set-key (kbd "C-.") #'helm-imenu-anywhere)
+;;(global-set-key (kbd "C-.") #'helm-imenu)
+(global-set-key (kbd "C-.") #'popup-imenu)
 
 ;;imenu-list
 (global-set-key (kbd "C-'") #'imenu-list-minor-mode)
