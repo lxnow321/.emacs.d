@@ -17,7 +17,15 @@
 (when (memq window-system '(x, ns))
   (linux-python-mode))
 
-(add-hook 'python-mode-hook 'toggle-truncate-lines)
+;;(add-hook 'python-mode-hook 'toggle-truncate-lines)
+
+(defun exfunc ()
+  (toggle-truncate-lines)
+  (kill-local-variable 'tab-width)
+  (kill-local-variable 'indent-tabs-mode)
+  (kill-local-variable 'python-indent-offset))
+
+(add-hook 'python-mode-hook 'exfunc)
 
 
 ;;(require 'py-autopep8)
