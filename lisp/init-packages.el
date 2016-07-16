@@ -23,6 +23,8 @@
 
 		    ;;default-better
 		    chinese-pyim
+			chinese-pyim-basedict
+			chinese-pyim-greatdict
 		    flycheck
 		    shell-pop
 		    imenu-anywhere

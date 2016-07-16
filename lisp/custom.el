@@ -10,6 +10,7 @@
  ;; If there is more than one, they won't work right.
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes (quote ("6df30cfb75df80e5808ac1557d5cc728746c8dbc9bc726de35b15180fa6e0ad9" default)))
+ '(default-input-method "chinese-pyim")
  '(neo-click-changes-root t)
  '(neo-theme (quote arrow))
  '(shell-pop-universal-key "C-t"))

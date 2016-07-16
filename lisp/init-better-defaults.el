@@ -6,7 +6,10 @@
   (require 'chinese-pyim)
   (require 'chinese-pyim-basedict)
   (chinese-pyim-basedict-enable)
-  (setq default-input-method "chinese-pyim"))
+  (require 'chinese-pyim-greatdict)
+  (chinese-pyim-greatdict-enable)
+  (setq default-input-method "chinese-pyim")
+  (global-set-key (kbd "C-\\") 'toggle-input-method))
 
 (when (memq window-system '(x))
   (linux-better-defaults))
@@ -32,7 +35,6 @@
 ;;flycheck On-the-fly syntax checking
 ;;(require 'flycheck)
 (global-flycheck-mode)
-
 
 
 ;;window-numbering:Change window by M+0..9
@@ -84,10 +86,15 @@
 (setq locale-coding-system 'gbk)
 (set-default-coding-systems 'gbk)
 (set-terminal-coding-system 'gbk)
-(unless (eq system-type 'windows-nt)
-  (set-selection-coding-system 'gbk))
+;;(unless (eq system-type 'windows-nt)
+;;  (set-selection-coding-system 'gbk))
+;;
+;;(set-keyboard-coding-system 'gbk)
+;;(setq default-file-name-coding-system 'utf-8)
+;;(setq file-name-coding-system 'utf-8)
 
-(setq default-buffer-file-coding-system 'utf-8)
+
+(setq buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
 ;;ring-bell-function
