@@ -2,7 +2,7 @@
 ;;init-ui
 
 ;;load-theme
-(when (memq window-system '(x))
+(when (memq window-system '(x ns))
   (load-theme 'monokai t))
 (when (memq window-system '(w32))
   (load-theme 'tango t))
