@@ -1,6 +1,6 @@
 
-;;init-ui
 
+;;; Code:
 ;;load-theme
 (when (memq window-system '(x ns))
   (load-theme 'monokai t))

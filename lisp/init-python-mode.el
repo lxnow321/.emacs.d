@@ -1,31 +1,27 @@
 
+;;; Code:
 (defun linux-python-mode ()
   (when (memq window-system '(x, ns))
-	(exec-path-from-shell-initialize))
-  
-  
-  (add-hook 'python-mode-hook 'jedi:setup)
-  (setq jedi:complete-on-dot t)
-
-  ;;(eval-after-load "python"
-;;	'(define-key python-mode-map "\C-cx" 'jedi-direx:pop-to-buffer))
- ;; (add-hook 'jedi-mode-hook 'jedi-direx:setup)
-)
-  
-
+	(exec-path-from-shell-initialize)))
 
 (when (memq window-system '(x, ns))
   (linux-python-mode))
 
-;;(add-hook 'python-mode-hook 'toggle-truncate-lines)
-
-(defun exfunc ()
+(defun my-python-mode-hook-funtions ()
   (toggle-truncate-lines)
   (kill-local-variable 'tab-width)
   (kill-local-variable 'indent-tabs-mode)
   (kill-local-variable 'python-indent-offset))
 
-(add-hook 'python-mode-hook 'exfunc)
+(add-hook 'python-mode-hook 'my-python-mode-hook-funtions)
+
+;;jedi
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
+;;(eval-after-load "python"
+;;  '(define-key python-mode-map "\C-cx" 'jedi-direx:pop-to-buffer))
+;;(add-hook 'jedi-mode-hook 'jedi-direx:setup)
 
 
 ;;(require 'py-autopep8)
@@ -42,3 +38,5 @@
 
 
 (provide 'init-python-mode)
+
+

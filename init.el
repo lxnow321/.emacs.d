@@ -1,19 +1,6 @@
 
 
-
-;;not need to set
-;;(add-hook 'emacs-lisp-mode-hook 'toggle-truncate-lines)
-;;(add-hook 'Info-mode-hook 'toggle-truncate-lines)
-
-
-
-;;(electric-indent-mode -1)
-
-
-
-;;(setq initial-frame-alist (quote ((fullscreen . maximized))))
-
-
+;;; Code:
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 

@@ -1,5 +1,5 @@
 
-
+;;; Code:
 ;;linux-better-defaults
 (defun linux-better-defaults ()
   ;;chinese-pyim

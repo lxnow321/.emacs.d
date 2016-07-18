@@ -1,8 +1,5 @@
 
-
-
-
-
+;;; Code:
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -13,6 +10,7 @@
  '(default-input-method "chinese-pyim")
  '(neo-click-changes-root t)
  '(neo-theme (quote arrow))
+ '(pyim-use-tooltip (quote pos-tip))
  '(shell-pop-universal-key "C-t"))
 
 (custom-set-faces
