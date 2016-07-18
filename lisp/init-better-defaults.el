@@ -15,6 +15,15 @@
   (linux-better-defaults))
 
 
+;;mac-better-defaults
+(defun mac-better-defaults ()
+  (setenv "PATH" (concat (getenv "PATH") ";\\usr\\local\\bin"))
+  (add-to-list 'exec-path "/usr/local/bin"))
+
+(when (memq window-system '(ns))
+  (mac-better-defaults))
+
+
 ;;win32-better-defaults
 (defun win32-better-defaults ()
    (setenv "PATH" (concat (getenv "PATH") ";G:\\cygwin64\\bin"))
