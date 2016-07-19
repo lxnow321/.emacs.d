@@ -11,7 +11,9 @@
  '(neo-click-changes-root t)
  '(neo-theme (quote arrow))
  '(pyim-use-tooltip (quote pos-tip))
- '(shell-pop-universal-key "C-t"))
+ '(shell-pop-universal-key "C-t")
+ '(swiper-include-line-number-in-search t)
+ '(swiper-min-highlight 1))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
