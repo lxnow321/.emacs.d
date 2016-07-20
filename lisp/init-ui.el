@@ -45,11 +45,14 @@
 (popwin-mode 1)
 
 ;;direx
-(require 'direx)
-(push '(direx:direx-mode :position left :width 25 :dedicated t)
-      popwin:special-display-config)
-(global-set-key (kbd "C-x C-q") 'direx:jump-to-directory-other-window)
+;;(require 'direx)
+;;(push '(direx:direx-mode :position left :width 25 :dedicated t)
+;;      popwin:special-display-config)
+;;(global-set-key (kbd "C-x C-q") 'direx:jump-to-directory-other-window)
 
+;;neotree
+(global-set-key (kbd "C-c C-q") 'neotree-toggle)
+(global-set-key (kbd "C-c d") 'neotree-find)
 
 ;;neotree
 ;;(add-to-list 'load-path "~/PythonText")

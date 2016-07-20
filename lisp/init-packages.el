@@ -44,7 +44,8 @@
 		    ;;ui
 		    highlight-parentheses
 		    popwin
-		    direx
+		    ;;direx
+			neotree
 
 			switch-window
 			swap-buffers

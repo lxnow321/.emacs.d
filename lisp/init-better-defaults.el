@@ -106,6 +106,11 @@
 (setq buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;;work setting
+;;(set-language-environment 'Chinese-GBK)
+;;(modify-coding-system-alist 'file "\\.py\\'" 'gbk)
+
+
 ;;ring-bell-function
 (setq ring-bell-function 'ignore)
 
