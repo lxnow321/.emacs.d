@@ -10,7 +10,6 @@
  '(default-input-method "chinese-pyim")
  '(neo-click-changes-root nil)
  '(neo-theme (quote arrow))
- '(pyim-use-tooltip (quote pos-tip))
  '(shell-pop-universal-key "C-t")
  '(swiper-include-line-number-in-search t)
  '(swiper-min-highlight 1))
