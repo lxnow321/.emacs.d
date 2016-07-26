@@ -38,6 +38,8 @@
 
 			helm-ag
 
+			fill-column-indicator
+
 		    ;;keybindings
 		    recentf
 
