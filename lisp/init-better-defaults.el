@@ -143,6 +143,9 @@
 (global-set-key (kbd "C-r") 'isearch-forward)
 
 
+(require 'fill-column-indicator)
+
+
 (provide 'init-better-defaults)
 
 
