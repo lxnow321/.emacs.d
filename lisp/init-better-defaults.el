@@ -4,8 +4,8 @@
 (defun linux-better-defaults ()
   ;;chinese-pyim
   (require 'chinese-pyim)
-  (require 'chinese-pyim-basedict)
-  (chinese-pyim-basedict-enable)
+;;  (require 'chinese-pyim-basedict)
+;;  (chinese-pyim-basedict-enable)
   (require 'chinese-pyim-greatdict)
   (chinese-pyim-greatdict-enable)
   (setq default-input-method "chinese-pyim")
@@ -91,24 +91,20 @@
 
 
 ;;coding system
-(set-language-environment 'Chinese-GBK)
-(setq locale-coding-system 'gbk)
-(set-default-coding-systems 'gbk)
-(set-terminal-coding-system 'gbk)
-;;(unless (eq system-type 'windows-nt)
-;;  (set-selection-coding-system 'gbk))
-;;
-;;(set-keyboard-coding-system 'gbk)
-;;(setq default-file-name-coding-system 'utf-8)
-;;(setq file-name-coding-system 'utf-8)
+(when (memq window-system '(x, ns))
+  (setq buffer-file-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8))
 
-
-(setq buffer-file-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
-
-;;work setting
-;;(set-language-environment 'Chinese-GBK)
-;;(modify-coding-system-alist 'file "\\.py\\'" 'gbk)
+(when (memq window-system '(w32))
+;;  (set-language-environment 'Chinese-GBK)
+;;  (setq locale-coding-system 'gbk)
+;;  (set-default-coding-systems 'gbk)
+;;  (set-terminal-coding-system 'gbk)
+;;  (setq buffer-file-coding-system 'utf-8)
+;;  (prefer-coding-system 'utf-8)
+  ;;work setting
+  (set-language-environment 'Chinese-GBK)
+  (modify-coding-system-alist 'file "\\.py\\'" 'gbk))
 
 
 ;;ring-bell-function
