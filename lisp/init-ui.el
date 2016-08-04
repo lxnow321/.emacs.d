@@ -51,7 +51,7 @@
 ;;(global-set-key (kbd "C-x C-q") 'direx:jump-to-directory-other-window)
 
 ;;neotree
-(global-set-key (kbd "C-c C-q") 'neotree-toggle)
+(global-set-key (kbd "<f5>") 'neotree-toggle)
 (global-set-key (kbd "C-c d") 'neotree-find)
 
 ;;neotree
